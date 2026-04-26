@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+
+	<!-- Employee List Servlet -->
+	<servlet>
+		<servlet-name>EmployeeList</servlet-name>
+		<servlet-class>controller.EmployeeListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EmployeeList</servlet-name>
+		<url-pattern>/employees</url-pattern>
+	</servlet-mapping>
+
+	<!-- PDF Export -->
+	<servlet>
+		<servlet-name>ExportEmployeePDF</servlet-name>
+		<servlet-class>controller.ExportEmployeePDFServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ExportEmployeePDF</servlet-name>
+		<url-pattern>/exportEmployeePDF</url-pattern>
+	</servlet-mapping>
+
+	<!-- Excel Export -->
+	<servlet>
+		<servlet-name>ExportEmployeeExcel</servlet-name>
+		<servlet-class>controller.ExportEmployeeExcelServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ExportEmployeeExcel</servlet-name>
+		<url-pattern>/exportEmployeeExcel</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
+
